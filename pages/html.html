@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course HTML</title>
+    <link
+      rel="shortcut icon"
+      href="..\image\icons8-learn-web-design-and-development-with-sitepoint-tutorials-32.png"
+    />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar1">
+        <a href="#" class="logo">
+          <img
+            src="../image/icons8-learn-web-design-and-development-with-sitepoint-tutorials-32.png"
+            alt="logo"
+          />
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="js.html">JavaScript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="description">
+        <div class="description-text">
+          <h1 class="title">
+            <span class="highlighted">Learn</span> HTML from Scratch.
+          </h1>
+        </div>
+        <img src="../image/learn html.png" alt="image" class="img" />
+      </div>
+    </header>
+
+    <section class="container-fluid courses-section">
+      <div class="row">
+        <div class="col-3">
+          <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end left-navbar"
+          >
+            <h4 class="table-contents">Table of Contents</h4>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">1. Definition</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">1.1. General</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2"
+                  >1.2. Syntax: tags, elements, attributes</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-1-3"
+                  >1.3. Content structuring elements</a
+                >
+              </nav>
+              <a class="nav-link" href="#item-2"
+                >2. Text "formatting" elements</a
+              >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-2-1"
+                  >2.1. Text "formatting" elements</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-2-2">2.2. Links</a>
+              </nav>
+              <a class="nav-link" href="#item-3">3. Lists, Tables, Forms</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1"
+                  >3.1. List items</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-3-2">3.2. Tables</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-3">3.3. Forms</a>
+              </nav>
+              <a class="nav-link" href="#item-4">4. Conclusion</a>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-9">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <h4><span class="highlight">1. Definition</span></h4>
+            </div>
+            <div id="item-1-1">
+              <h5>1.1. General</h5>
+
+              <p>
+                A webpage is a single document or file that is displayed in a
+                web browser when someone visits a specific URL. It contains
+                various elements such as text, images, and links that are
+                presented in a specific layout.<br />
+                A website, on the other hand, is a collection of webpages that
+                are linked together and accessed through a common domain name or
+                URL. It can contain multiple webpages, including a homepage,
+                about page, contact page, and other pages that provide
+                information, services, or products.<br />
+                A website can also have other elements such as a navigation
+                menu, footer, header, and sidebars that help to organize the
+                content and make it easier for users to navigate. Additionally,
+                a website can contain interactive elements such as forms,
+                videos, and animations. <br />In summary, a webpage is a single
+                document that is displayed in a web browser, while a website is
+                a collection of webpages that are linked together and accessed
+                through a common domain name or URL.
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>1.2. Syntax: tags, elements, attributes</h5>
+              <p>
+                In HTML, tags, elements, and attributes are used to create and
+                define the structure and content of a webpage.<br />
+
+                <br />Tags: Tags are HTML elements that are used to define the
+                structure of the webpage. They are enclosed in angle brackets
+                (&lt;&gt;) and can be either opening tags or closing tags.
+                Opening tags are used to start an HTML element, while closing
+                tags are used to end it.<br />
+
+                <br />Elements: Elements are made up of tags, content, and
+                attributes. They define the structure and content of a webpage.
+                For example, the HTML element &lt;h1&gt; defines a heading
+                element, and the content between the opening and closing tags is
+                the text that appears as the heading on the webpage.<br />
+
+                <br />Attributes: Attributes provide additional information
+                about an HTML element. They are added to the opening tag of an
+                element and are made up of a name and a value. For example, the
+                "src" attribute in the &lt;img&gt; element is used to specify
+                the URL of the image file to be displayed on the webpage.
+
+                <br /><br />
+                Here is an example of how tags, elements, and attributes are
+                used in HTML:
+              </p>
+              <img src="../image/Screenshot1.png" alt="exp1" class="resp-img" />
+              <p>
+                <br />In this example, the &lt;html&gt; element is the root
+                element, and contains the &lt;head&gt; and &lt;body&gt;
+                elements. The &lt;head&gt; element contains metadata about the
+                webpage, including the title. The &lt;body&gt; element contains
+                the visible content of the webpage, including a heading,
+                paragraph, image, and link. The &lt;img&gt; element has an "src"
+                attribute that specifies the URL of the image file to be
+                displayed, and an "alt" attribute that provides alternative text
+                in case the image cannot be displayed. The &lt;a&gt; element has
+                an "href" attribute that specifies the URL of the webpage to be
+                linked to.
+              </p>
+            </div>
+            <div id="item-1-3">
+              <h5>1.3. Content structuring elements</h5>
+              <p>
+                HTML provides several content structuring elements that are used
+                to create a well-organized and semantically meaningful webpage.
+                These elements help to define the structure of the content and
+                provide information about its meaning, making it easier for
+                search engines, screen readers, and other assistive technologies
+                to interpret the content. Some of the most commonly used content
+                structuring elements in HTML include:
+              </p>
+              <p>
+                The &lt;header&gt; element is used to define the top section of
+                a webpage, which typically includes a logo, navigation menu, and
+                other elements that are repeated across multiple pages of the
+                website.
+              </p>
+              <p>
+                The &lt;nav&gt; element is used to define a section of a webpage
+                that contains links to other pages on the website or to external
+                websites.
+              </p>
+              <p>
+                The &lt;main&gt; element is used to define the main content of a
+                webpage, which typically includes the primary content of the
+                page.
+              </p>
+              <p>
+                The &lt;section&gt; element is used to define a section of a
+                webpage that contains related content, such as a group of
+                articles or a list of products.
+              </p>
+              <p>
+                The &lt;article&gt; element is used to define a standalone piece
+                of content that can be read independently, such as a news
+                article, blog post, or product review.
+              </p>
+              <p>
+                The &lt;aside&gt; element is used to define a section of a
+                webpage that contains content that is related to the main
+                content, but is not essential to the overall meaning of the page
+              </p>
+              <p>
+                The &lt;footer&gt; element is used to define the bottom section
+                of a webpage, which typically includes copyright information,
+                contact information, and other elements that are repeated across
+                multiple pages of the website.
+              </p>
+              <p>
+                By using these content structuring elements in HTML, you can
+                create a well-organized and semantically meaningful webpage that
+                is easy to navigate and understand.
+              </p>
+            </div>
+            <div id="item-2">
+              <h4>
+                <span class="highlight"> 2. Text "formatting" elements</span>
+              </h4>
+            </div>
+            <div id="item-2-1">
+              <h5>2.1. Text "formatting" elements</h5>
+              <p>
+                HTML provides several text formatting elements that allow you to
+                change the appearance of text on a webpage. These elements are
+                used to add emphasis, headings, lists, and other formatting to
+                the text content. Here are some of the most commonly used text
+                formatting elements in HTML:
+              </p>
+              <p>
+                The &lt;h1&gt;-&lt;h6&gt; elements are used to define headings
+                of varying sizes and importance, with &lt;h1&gt; being the
+                largest and most important. Headings provide a visual hierarchy
+                to the content and help users to quickly identify the main
+                sections of the page.
+              </p>
+              <p>
+                The &lt;p&gt; element is used to define paragraphs of text. It
+                is the most common text element in HTML.
+              </p>
+              <p>
+                The &lt;strong&gt; and &lt;em&gt; elements are used to add
+                emphasis to text. &lt;strong&gt; is used to indicate important
+                text that should be bolded, while &lt;em&gt; is used to indicate
+                emphasized text that should be italicized.
+              </p>
+              <p>
+                The &lt;u&gt;, &lt;s&gt;, and &lt;del&gt; elements are used to
+                underline, strike through, and add a line through text,
+                respectively.
+              </p>
+              <p>
+                The &lt;blockquote&gt; element is used to quote text from
+                another source. It is often used to format longer quotes and
+                distinguish them from the rest of the text.
+              </p>
+              <p>
+                The &lt;ul&gt; and &lt;ol&gt; elements are used to create
+                unordered and ordered lists, respectively. Items in an unordered
+                list are preceded by bullet points, while items in an ordered
+                list are numbered.
+              </p>
+              <p>
+                The &lt;br&gt; element is used to create a line break, while the
+                &lt;hr&gt; element is used to create a horizontal line that can
+                be used to separate sections of content.
+              </p>
+              <p>
+                By using these text formatting elements in HTML, you can create
+                a webpage that is easy to read and visually appealing. However,
+                it's important to use text formatting elements appropriately and
+                sparingly, as overuse can make the content difficult to read and
+                understand.
+              </p>
+            </div>
+            <div id="item-2-2">
+              <h5>2.2. Links</h5>
+              <p>
+                Links are an important feature of HTML that allow you to create
+                hyperlinks to other webpages, documents, or resources on the
+                internet. They allow users to navigate between webpages and
+                access additional content related to the current webpage.
+
+                <br />To create a link in an HTML document, you need to use the
+                &lt;a&gt; element, which stands for "anchor." The &lt;a&gt;
+                element requires a minimum of two attributes: href and text.
+              </p>
+              <p>
+                There are several other attributes that you can use with the
+                &lt;a&gt; element to control the behavior and appearance of the
+                link. Some common attributes include:
+              </p>
+              <p>
+                target: Specifies where the linked document should open (e.g.,
+                in a new window or tab). title: Specifies a tooltip text that
+                appears when the user hovers over the link. rel: Specifies the
+                relationship between the current document and the linked
+                document (e.g., whether it is a bookmark or a reference).
+              </p>
+              <img src="../image/Screenshot 2.png" alt="" class="resp-img" />
+              <p>
+                <br />In this example, the target attribute is set to _blank,
+                which tells the browser to open the linked document in a new
+                window or tab. The title attribute specifies a tooltip that
+                appears when the user hovers over the link.
+
+                <br />Links can also be used to create internal links within the
+                same webpage or website. To create an internal link, you need to
+                specify the target location using a URL fragment identifier,
+                which is a section of the URL that begins with a # symbol
+                followed by an anchor name or ID.
+              </p>
+              <img src="../image/Screenshot 3.png" alt="" class="resp-img" />
+              <p>
+                <br />In this example, the href attribute points to the ID of
+                the h2 element that defines Section 2, which is specified using
+                the id attribute. When the user clicks on the link, the browser
+                will scroll down to the section of the page that contains the
+                target element.
+
+                <br /><br />Overall, links are an essential element of HTML that
+                allow you to create a navigable and interconnected web of
+                information.
+              </p>
+            </div>
+            <div id="item-3">
+              <h4><span class="highlight"> 3. Lists, Tables, Forms</span></h4>
+            </div>
+            <div id="item-3-1">
+              <h5>3.1. List items</h5>
+              <p>
+                In HTML, list items are created using the &lt;ul&gt; (unordered
+                list) or &lt;ol&gt; (ordered list) element, which contain one or
+                more &lt;li&gt; (list item) elements. Unordered lists display
+                list items with bullet points, while ordered lists display them
+                with numbered or lettered labels. List items can also contain
+                other HTML elements such as text, images, or links.
+              </p>
+            </div>
+            <div id="item-3-2">
+              <h5>3.3. Tables</h5>
+              <p>
+                In HTML, tables are created using the &lt;table&gt; element,
+                which contains one or more &lt;tr&gt; (table row) elements. Each
+                table row contains one or more &lt;td&gt; (table data) elements
+                that represent individual cells within the table. Tables can
+                also have header cells using the &lt;th&gt; (table header)
+                element, which are typically displayed in bold and centered.
+                Table cells can contain any type of content, including text,
+                images, links, or other HTML elements. Additionally, tables can
+                be styled using CSS to control their appearance and layout.
+              </p>
+            </div>
+            <div id="item-3-3">
+              <h5>3.3. Forms</h5>
+              <p>
+                In HTML, forms are created using the &lt;form&gt; element, which
+                contains various types of input fields that allow users to
+                submit data to a web server. Input fields can include text
+                fields, checkboxes, radio buttons, drop-down menus, and buttons.
+                Each input field is created using a specific type of 'input'
+                element, with additional attributes used to control its behavior
+                and appearance. When a user submits a form, the data is
+                typically sent to a web server using the HTTP POST or GET
+                method, where it can be processed and stored. Forms can also be
+                styled using CSS to control their appearance and layout.
+              </p>
+            </div>
+            <div id="item-4">
+              <h4><span class="highlight"> 4. Conclusion</span></h4>
+              <p>
+                This is just a basic overview, but it should provide you with a
+                solid foundation in HTML. Good luck with your studies!
+              </p>
+            </div>
+          </div>
+          <p>Here is a video that will explain for you HTML much better.</p>
+          <div id="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/UB1O30fR-EE"
+              title="YouTube video player"
+              class="resp-img"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3>Quick Links</h3>
+            <a href="../index.html" class="link">Home</a><br />
+            <a href="html.html" class="link">HTML</a><br />
+            <a href="css.html" class="link">CSS</a><br />
+            <a href="js.html" class="link">JavaScript</a><br />
+            <a href="contact.html" class="link">Contacts</a>
+          </div>
+          <div class="mt-20">
+            <h3>Social Media</h3>
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="../image/icons8-facebook-50.png" alt="facebook"
+              /></a>
+              <a href="https://twitter.com/home" target="_blank"
+                ><img src="../image/icons8-twitter-50.png" alt="twitter"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="../image/icons8-instagram-50.png" alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/tesnim-mansour-30223222a/"
+                target="_blank"
+                ><img
+                  src="../image/icons8-linkedin-circled-50.png"
+                  alt="linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3>Useful Links</h3>
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML"
+              target="_blank"
+              class="link"
+              >More about HTML</a
+            ><br />
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/Css"
+              target="_blank"
+              class="link"
+              >More about CSS</a
+            ><br />
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+              target="_blank"
+              class="link"
+              >More about JavaScript</a
+            ><br />
+          </div>
+        </div>
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3 class="mb-3">Subscribe For Updates</h3>
+            <div class="pr-20">
+              <label for="exampleFormControlInput1"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+          </div>
+          <div class="mt-20">
+            <h3 class="feed">Your Feedbacks</h3>
+            <div class="mb-3 pr-20">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label"
+              ></label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Anything..."
+              ></textarea>
+              <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit">© Copyright 2023</div>
+    </footer>
+  </body>
+</html>

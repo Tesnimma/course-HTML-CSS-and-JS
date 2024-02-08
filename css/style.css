@@ -1,0 +1,327 @@
+header {
+  background-color: #082c4e;
+  padding-bottom: 2em;
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 9em;
+  margin-left: 9em;
+  margin-top: 5em;
+}
+
+.description-text {
+  max-width: 47em;
+  margin-top: 2em;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: 0.2s linear;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  background-color: #082c4e;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid yellow;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.title {
+  color: white;
+  font-size: 56px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.title2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+.img {
+  height: 18em;
+}
+
+.highlighted {
+  color: yellow;
+}
+
+footer {
+  background-color: #f2eae2;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  margin-top: 3em;
+  justify-content: space-around;
+  margin-right: 0;
+}
+
+.courses-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  font-size: 52px;
+}
+
+.article {
+  margin: 2em;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.article-html {
+  background-color: #fe6571;
+}
+
+.article-css {
+  background-color: #f2eae2;
+}
+
+.article-js {
+  background-color: #ffcc00;
+}
+.icon {
+  margin-top: 2em;
+  height: 6em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+.article h1,
+p {
+  margin-left: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: justify;
+}
+.read-more-btn {
+  color: black;
+  text-decoration: none;
+  margin-left: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.read-more-btn:hover {
+  border-bottom: 2px solid black;
+}
+.box-container {
+  display: flex;
+  margin: 4em;
+  justify-content: space-around;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.box h3 {
+  color: black;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  margin-left: -1em;
+}
+.social-media a {
+  padding: 6px;
+}
+
+.submit-btn {
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: #ffcc00;
+}
+
+.credit {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+input .btn {
+  border: none;
+}
+
+.links {
+  margin-bottom: 1em;
+}
+
+.feed,
+.sm {
+  margin-top: 1em;
+}
+
+.form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  width: 30%;
+}
+
+.star {
+  color: gold;
+  font-size: 24px;
+}
+.void-star {
+  font-size: 24px;
+  color: #d3d3d3;
+}
+
+.courses-section {
+  margin-top: 60px;
+  max-width: 90%;
+}
+
+.table-contents {
+  color: #082c4e;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: #ffcc00;
+}
+.nav-link {
+  color: #082c4e;
+}
+.highlight {
+  background-color: #ffcc00;
+  color: #082c4e;
+}
+h4 {
+  margin-bottom: 1em;
+}
+
+form {
+  max-width: 50%;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.quiz-form p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+label {
+  margin-bottom: -10px;
+}
+.quiz-button,
+.quiz-button a {
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  width: 30%;
+  text-decoration: none;
+}
+.quiz {
+  text-align: center;
+}
+.btn-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.qcm7,
+.resp-img {
+  max-width: -webkit-fill-available;
+}
+
+.footer-box {
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 23px;
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-bottom: 15px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.rating {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.navbar-toggler {
+  background-color:#fff ;
+  
+}

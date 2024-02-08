@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course CSS</title>
+    <link
+      rel="shortcut icon"
+      href="..\image\icons8-learn-web-design-and-development-with-sitepoint-tutorials-32.png"
+    />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar1">
+        <a href="#" class="logo">
+          <img
+            src="../image/icons8-learn-web-design-and-development-with-sitepoint-tutorials-32.png"
+            alt="logo"
+          />
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="js.html">JavaScript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="description">
+        <div class="description-text">
+          <h1 class="title">
+            <span class="highlighted">Learn</span> CSS from Scratch.
+          </h1>
+        </div>
+        <img src="../image/navbar css.png" alt="image" class="img" />
+      </div>
+    </header>
+
+    <section class="container-fluid courses-section">
+      <div class="row">
+        <div class="col-3">
+          <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end"
+          >
+            <h4 class="table-contents">Table of Contents</h4>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">1. Introduction and Basics</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1"
+                  >1.1. Cascading Style Sheet</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-1-2">1.2. Syntax</a>
+              </nav>
+              <a class="nav-link" href="#item-2"
+                >2. Genealogy and different types of selectors</a
+              >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-2-1"
+                  >2.1. Class Selectors</a
+                >
+
+                <a class="nav-link ms-3 my-1" href="#item-2-2"
+                  >2.2. Pseudo-classes on links</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-2-3"
+                  >2.3. Bulled Lists</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-2-4"
+                  >2.4. Borders and Backgrounds</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-2-5"
+                  >2.5. Dimensions, Margin, Padding</a
+                >
+              </nav>
+              <a class="nav-link" href="#item-3"
+                >3. Positioning the floats and the flow</a
+              >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1"
+                  >3.1. The Floats and the Flow</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-3-2"
+                  >3.2. The "Display" property for layout</a
+                >
+                <a class="nav-link ms-3 my-1" href="#item-3-3"
+                  >3.3. Relative, Absolute and Fixed position</a
+                >
+              </nav>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-9">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <h4>
+                <span class="highlight"> 1. Introduction and Basics</span>
+              </h4>
+            </div>
+            <div id="item-1-1">
+              <h5>1.1. Cascading Style Sheet</h5>
+              <p>
+                CSS (Cascading Style Sheets) is a language used to describe the
+                presentation of web pages. It provides web developers with a
+                powerful set of tools for controlling the layout, typography,
+                colors, and other visual aspects of a website, separate from its
+                content.
+              </p>
+              <p>
+                CSS works by defining styles for HTML elements using selectors,
+                which specify which elements the styles should be applied to.
+                CSS styles consist of properties and values, which define how
+                the selected elements should be displayed.
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>1.2. Syntax</h5>
+              <p>
+                The syntax of CSS (Cascading Style Sheets) is fairly
+                straightforward. Here are the basic components of a CSS rule:
+              </p>
+              <p>
+                Selector {<br />
+                Property: Value;
+                <br />}
+              </p>
+              <p>
+                Here's what each part of the rule means:<br />
+
+                <br />Selector: This is the HTML element that you want to style.
+                You can select an element by its tag name (e.g. "p"), class name
+                (e.g. ".my-class"), or ID (e.g. "#my-id").
+
+                <br />Property: This is the specific style you want to apply to
+                the selected element. Examples of properties include "color,"
+                "font-size," "background-color," and "padding."
+
+                <br />Value: This is the value you want to assign to the
+                property. For example, if you want to set the font size to 14
+                pixels, you would use "font-size: 14px;" as the property and
+                value
+              </p>
+              <img src="../image/Screenshot 4.png" alt="" class="resp-img" />
+              <p>
+                <br />It's important to note that CSS is a cascading language,
+                which means that multiple styles can be applied to the same
+                element, and the browser will determine which one to use based
+                on a set of rules. These rules determine the specificity of the
+                selector and the order in which the styles are applied.
+              </p>
+            </div>
+            <div id="item-2">
+              <h4>
+                <span class="highlight">
+                  2. Genealogy and different types of selectors</span
+                >
+              </h4>
+            </div>
+
+            <div id="item-2-1">
+              <h5>2.1. Class Selectors</h5>
+              <p>
+                In CSS, a class selector is a way to target and style HTML
+                elements based on their class attribute. Class selectors start
+                with a dot (.) followed by the name of the class.
+              </p>
+              <p>
+                To apply a class selector to an HTML element, you would add the
+                class attribute to the element's HTML tag and assign it a name
+                that matches the class selector in the CSS.
+              </p>
+              <img src="../image/Screenshot 5.png" alt="" class="resp-img" />
+              <p>
+                <br />In this example, we've defined a class selector called
+                ".my-class" that sets the text color to red and the font size to
+                16 pixels. To apply this class to an HTML element, we would add
+                the "class" attribute to the element's tag like so:
+              </p>
+              <img src="../image/Screenshot 6.png" alt="" class="resp-img" />
+              <p>
+                <br />Note that you can apply the same class selector to
+                multiple HTML elements, which can be useful for creating
+                consistent styling across different parts of a webpage. To
+                select elements with multiple classes, you can simply chain the
+                class selectors together with no space.
+              </p>
+
+              <img src="../image/Screenshot 7.png" alt="" class="resp-img" />
+            </div>
+
+            <div id="item-2-2">
+              <h5><br />2.2. Pseudo-classes on links</h5>
+              <p>
+                In CSS, pseudo-classes are used to style elements based on their
+                state or position in the document tree. One of the most commonly
+                used pseudo-classes is the :hover pseudo-class, which is used to
+                style elements when the user hovers over them with the mouse.
+
+                <br />When it comes to links, there are several pseudo-classes
+                that can be used to style different states of the link. Here are
+                some examples:
+              </p>
+              <p>
+                :link: This pseudo-class is used to target links that have not
+                yet been visited by the user. It is commonly used to set the
+                default styles for links on a webpage.
+
+                <br />:visited: This pseudo-class is used to target links that
+                have already been visited by the user. It can be used to change
+                the styling of links to indicate that they have already been
+                clicked.
+
+                <br />:hover: This pseudo-class is used to target links when the
+                user hovers over them with the mouse. It is often used to add
+                visual feedback to links, such as changing the color or adding
+                an underline.
+
+                <br />:active: This pseudo-class is used to target links when
+                they are being clicked by the user. It is commonly used to add
+                an extra visual effect, such as changing the link color or
+                adding a background color.
+              </p>
+              <img src="../image/Screenshot 8.png" alt="" class="resp-img" />
+              <p>
+                <br />In this example, we've set the default link color to blue
+                and removed the underline with the :link pseudo-class. When a
+                link is visited, it will turn purple due to the :visited
+                pseudo-class. When the user hovers over a link, it will gain an
+                underline due to the :hover pseudo-class. Finally, when the user
+                clicks a link, it will turn red and gain an underline due to the
+                :active pseudo-class.
+              </p>
+            </div>
+            <div id="item-2-3">
+              <h5>2.3. Bulled Lists</h5>
+              <p>
+                In CSS, you can use the list-style property to style bullet
+                points in an unordered list. <br />Here's an example of how to
+                do this:
+              </p>
+              <img src="../image/Screenshot 9.png" alt="" class="resp-img" />
+              <p>
+                <br />In this example, we've defined styles for different types
+                of bullet points using the list-style property. The disc value
+                is the default style for bullet points. The square and circle
+                values create different shapes for the bullet points.
+
+                <br />The none value removes the bullet points altogether. This
+                can be useful if you want to create a list that doesn't use
+                bullet points.
+
+                <br />
+                Finally, the custom class removes the default bullet points and
+                adds a custom bullet point using the :before pseudo-element. In
+                this case, we've added a solid circle bullet point using the
+                Unicode character "\2022". We've also adjusted the font size and
+                margin to create a custom look for the bullet point.
+              </p>
+            </div>
+            <div id="item-2-4">
+              <h5>2.4. Borders and Backgrounds</h5>
+              <p>
+                The border property is used to set the border style, width, and
+                color of an element. It can be set using the following syntax:
+              </p>
+              <img src="../image/Screenshot 10.png" alt="" class="resp-img" />
+              <p>
+                <br />You can also set each individual property separately using
+                the border-style, border-width, and border-color properties.
+              </p>
+
+              <p>
+                The background property is used to set the background color or
+                image of an element. It can be set using the following syntax:
+              </p>
+              <img src="../image/Screenshot 11.png" alt="" class="resp-img" />
+              <p>
+                <br />You can also set a background image using the
+                background-image property, and control how it repeats using the
+                background-repeat property. The background-position property is
+                used to set the position of the background image.
+              </p>
+              <img src="../image/Screenshot 12.png" alt="" class="resp-img" />
+            </div>
+            <div id="item-2-5">
+              <h5><br />2.5. Dimensions, Margin, Padding</h5>
+              <p>
+                In CSS, you can use the width, height, margin, and padding
+                properties to control the dimensions of HTML elements.
+              </p>
+              <p>
+                The width and height properties are used to set the dimensions
+                of an element. They can be set using the following syntax:
+              </p>
+              <img src="../image/Screenshot 13.png" alt="" class="resp-img" />
+              <p>
+                <br />The margin property is used to control the space outside
+                an element. It can be set using the following syntax:
+              </p>
+              <img src="../image/Screenshot 14.png" alt="" class="resp-img" />
+              <p>
+                <br />The padding property is used to control the space inside
+                an element. It can be set using the following syntax:
+              </p>
+              <img src="../image/Screenshot 15.png" alt="" class="resp-img" />
+              <p>
+                <br />Here's an example that combines all of these properties:
+              </p>
+              <img src="../image/Screenshot 16.png" alt="" class="resp-img" />
+            </div>
+
+            <div id="item-3">
+              <h4>
+                <br /><span class="highlight"
+                  >3. Positioning the floats and the flow</span
+                >
+              </h4>
+            </div>
+            <div id="item-3-1">
+              <h5>3.1. The Floats and the Flow</h5>
+              <p>
+                In CSS, the float property is used to control the positioning of
+                elements within their container. When an element is floated, it
+                is moved to the left or right of its containing element, and
+                other elements flow around it.
+              </p>
+              <p>
+                The float property can be set to either left or right, and it
+                can be applied to block-level elements.
+              </p>
+              <p>
+                When an element is floated, it is taken out of the normal flow
+                of the document. This can cause other elements to move around
+                it, which can have unexpected effects on the layout of the page.
+                To prevent this, you can use the clear property to ensure that
+                no other elements are allowed to float next to the cleared
+                element.
+              </p>
+              <p>
+                The clear property can be set to left, right, both, or none.
+              </p>
+              <p>
+                In addition to the float and clear properties, there is also the
+                concept of the document flow. The document flow refers to the
+                order in which elements are displayed on the page. By default,
+                elements are displayed in the order in which they appear in the
+                HTML document.
+              </p>
+              <p>
+                When elements are floated, they are taken out of the normal
+                document flow. This can cause other elements to move around
+                them, which can make it difficult to control the layout of the
+                page. To ensure that elements are displayed in the correct
+                order, you can use the display property to change the layout of
+                the page.
+              </p>
+              <p>
+                The display property can be set to block, inline, inline-block,
+                table, and other values to control how elements are displayed.
+                By changing the display value, you can control the layout of the
+                page, even when elements are floated.
+              </p>
+              <img src="../image/Screenshot 17.png" alt="" class="resp-img" />
+            </div>
+            <div id="item-3-2">
+              <h5><br />3.2. The "Display" property for layout</h5>
+              <p>
+                In CSS, the display property is used to control the layout of
+                HTML elements. It determines how an element should be displayed,
+                and can take on several values, each of which affects the layout
+                in a different way. Some of the most commonly used values for
+                the display property are:
+              </p>
+              <p>
+                block: This value causes an element to be displayed as a
+                block-level element. Block-level elements take up the full width
+                of their container and are stacked vertically. Examples of
+                block-level elements include div, p, and h1-h6.
+
+                <br />
+                inline: This value causes an element to be displayed as an
+                inline-level element. Inline-level elements take up only as much
+                width as necessary and are stacked horizontally. Examples of
+                inline-level elements include a, span, and img.
+
+                <br />
+                inline-block: This value causes an element to be displayed as an
+                inline-level element, but with the dimensions and padding of a
+                block-level element. This allows for elements to be positioned
+                side-by-side while retaining the ability to set dimensions and
+                padding. Examples of elements that can use inline-block include
+                input, button, and select.
+
+                <br />
+                none: This value causes an element to be removed from the layout
+                entirely. The element is not displayed and does not take up any
+                space on the page. This is often used to hide elements in
+                response to user actions.
+
+                <br />
+                flex: This value causes an element to become a flexible
+                container that can be used to create a responsive layout.
+                Elements within a flex container can be easily repositioned and
+                resized based on the available space. This is often used to
+                create layouts that adjust to different screen sizes.
+              </p>
+
+              <img src="../image/Screenshot 18.png" alt="" class="resp-img" />
+              <p>
+                <br />Overall, the display property is a powerful tool for
+                controlling the layout of HTML elements, and can be used in
+                combination with other CSS properties to create responsive and
+                visually appealing layouts.
+              </p>
+            </div>
+            <div id="item-3-3">
+              <h5>3.3. Relative, Absolute and Fixed position</h5>
+              <p>
+                In CSS, positioning properties are used to control the position
+                of elements on a web page. The most commonly used positioning
+                properties are relative, absolute, and fixed. <br />Here is an
+                overview of each one:
+              </p>
+              <p>
+                Relative Positioning: When an element is positioned relatively,
+                it is positioned relative to its normal position in the flow of
+                the document. This means that if you add a top or left property
+                to the element, it will move from its original position by the
+                amount specified in the property, but it will still take up
+                space in the document flow.
+              </p>
+              <p>
+                Absolute Positioning: When an element is positioned absolutely,
+                it is positioned relative to its nearest positioned ancestor
+                element. If no positioned ancestor exists, it will be positioned
+                relative to the body element. Absolute positioning takes the
+                element out of the normal flow of the document, which means it
+                will not take up any space in the document flow.
+              </p>
+              <p>
+                Fixed Positioning: When an element is positioned fixed, it is
+                positioned relative to the viewport (the browser window). Fixed
+                positioning also takes the element out of the normal flow of the
+                document, which means it will not take up any space in the
+                document flow. The element will stay in the same position even
+                if the page is scrolled.
+              </p>
+              <p>
+                Overall, the choice of which positioning property to use depends
+                on the specific layout requirements of the web page. By using a
+                combination of these positioning properties, designers can
+                create complex and dynamic layouts that respond well to
+                different devices and screen sizes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3>Quick Links</h3>
+            <a href="../index.html" class="link">Home</a><br />
+            <a href="html.html" class="link">HTML</a><br />
+            <a href="css.html" class="link">CSS</a><br />
+            <a href="js.html" class="link">JavaScript</a><br />
+            <a href="contact.html" class="link">Contacts</a>
+          </div>
+          <div class="mt-20">
+            <h3>Social Media</h3>
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="../image/icons8-facebook-50.png" alt="facebook"
+              /></a>
+              <a href="https://twitter.com/home" target="_blank"
+                ><img src="../image/icons8-twitter-50.png" alt="twitter"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="../image/icons8-instagram-50.png" alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/tesnim-mansour-30223222a/"
+                target="_blank"
+                ><img
+                  src="../image/icons8-linkedin-circled-50.png"
+                  alt="linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3>Useful Links</h3>
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML"
+              target="_blank"
+              class="link"
+              >More about HTML</a
+            ><br />
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/Css"
+              target="_blank"
+              class="link"
+              >More about CSS</a
+            ><br />
+            <a
+              href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+              target="_blank"
+              class="link"
+              >More about JavaScript</a
+            ><br />
+          </div>
+        </div>
+        <div class="col-md-3 footer-box">
+          <div class="mt-20">
+            <h3 class="mb-3">Subscribe For Updates</h3>
+            <div class="pr-20">
+              <label for="exampleFormControlInput1"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+          </div>
+          <div class="mt-20">
+            <h3 class="feed">Your Feedbacks</h3>
+            <div class="mb-3 pr-20">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label"
+              ></label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Anything..."
+              ></textarea>
+              <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit">© Copyright 2023</div>
+    </footer>
+  </body>
+</html>
